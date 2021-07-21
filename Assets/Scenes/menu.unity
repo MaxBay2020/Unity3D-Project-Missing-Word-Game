@@ -2348,6 +2348,9 @@ MonoBehaviour:
   - {fileID: 2052082803}
   - {fileID: 1087363209}
   - {fileID: 443522108}
+  soundMutedImage: {fileID: 0}
+  soundUnmutedImage: {fileID: 0}
+  bgMusic: {fileID: 0}
 --- !u!4 &877649213
 Transform:
   m_ObjectHideFlags: 0

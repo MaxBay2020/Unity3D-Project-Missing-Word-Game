@@ -7,7 +7,7 @@ using DG.Tweening;
 public class Roll_dice_button_controller : MonoBehaviour
 {
     // get the dice_image gameobject;
-    public GameObject dice_image, bg_panel, word_panel;
+    public GameObject dice_image, word_panel;
 
     // get the images of the button;
     public Texture roll_button_image, stop_button_image;
@@ -33,7 +33,7 @@ public class Roll_dice_button_controller : MonoBehaviour
             this.GetComponent<RawImage>().texture = roll_button_image;
             dice_image.GetComponent<Animator>().enabled = false;
             isRolling = false;
-            Debug.Log(dice_image.GetComponent<RawImage>().texture.name);
+            //Debug.Log(dice_image.GetComponent<RawImage>().texture.name);
             string vowel = dice_image.GetComponent<RawImage>().texture.name;
             // call a coroutine
             //StartCoroutine(ShowPanel(vowel));
@@ -58,6 +58,37 @@ public class Roll_dice_button_controller : MonoBehaviour
         }
 
 
+    }
+
+    /// <summary>
+    /// when roll dice button clicked, roll the dice
+    /// </summary>
+    public void RollDiceButtonClick()
+    {
+        // 1. disable the button
+        this.GetComponent<Button>().enabled = false;
+        // 2. roll the dice
+        dice_image.GetComponent<Animator>().enabled = true;
+
+        // 3. play the rolling dice sound
+        dice.GetComponent<AudioSource>().Play();
+
+        // call a coroutine
+        StartCoroutine(StopRollingDice(Random.Range(1.5f, 2.5f)));
+        
+    }
+
+    IEnumerator StopRollingDice(float second)
+    {
+        yield return new WaitForSeconds(second);
+        // 4. after certain seconds, stop the dice
+        dice_image.GetComponent<Animator>().enabled = false;
+        // 5. get the vowel stopped
+        string vowel = dice_image.GetComponent<RawImage>().texture.name;
+        // 6. set the vowel
+        GameManager._instance.FillWordsWithVowel(vowel);
+        // 7. stop playing rolling dice sound
+        dice.GetComponent<AudioSource>().Stop();
     }
 
     IEnumerator ShowPanel(string vowel)

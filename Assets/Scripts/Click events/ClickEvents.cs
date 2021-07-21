@@ -9,9 +9,14 @@ public class ClickEvents : MonoBehaviour
     [Header("Tutorial Panels")]
     public GameObject bgGrey;
     public GameObject[] tutorialPanels;
+    public Texture soundMutedImage, soundUnmutedImage;
+    public GameObject bgMusic;
 
     // index of tutorial panels
     private int index;
+
+    // the flat of muted music
+    private bool hasMusic = true;
 
     /// <summary>
     /// when start button clicked, load the main scene
@@ -60,6 +65,28 @@ public class ClickEvents : MonoBehaviour
 	/// </summary>
     public void ExitButtonClick()
     {
-        SceneManager.LoadScene(0);
+        Application.Quit();
+    }
+
+    /// <summary>
+    /// when mute button clicked, mute the bg music
+    /// </summary>
+    public void MuteButtonClicked()
+    {
+        if (hasMusic)
+        {
+            // 1. switch sprite to muted image
+            bgMusic.GetComponent<RawImage>().texture = soundMutedImage;
+            // 2. turn off music
+            Camera.main.GetComponent<AudioListener>().enabled = false;
+        }
+        else
+        {
+            // 1. switch sprite to unmuted image
+            bgMusic.GetComponent<RawImage>().texture = soundUnmutedImage;
+            // 2. turn on music
+            Camera.main.GetComponent<AudioListener>().enabled = true;
+        }
+        hasMusic = !hasMusic;
     }
 }

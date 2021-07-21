@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     private int index;
     public GameObject result_panel;
     private int totalCorrect;
+    public GameObject rollDiceButton;
 
     //the grey background image
     [SerializeField]
@@ -110,13 +111,15 @@ public class GameManager : MonoBehaviour
         // move the index to the next
         index++;
 
-        // hide the current, display the next
+        // hide the current, display the next word panel, enable the roll dice button
         for (int i = 0; i < words.Count; i++)
         {
             words[i].SetActive(i == index);
         }
 
-        
+        rollDiceButton.GetComponent<Button>().enabled = index <= words.Count;
+
+
     }
 
     /// <summary>
@@ -147,13 +150,14 @@ public class GameManager : MonoBehaviour
 
         index++;
 
-        // hide the current, display the next
+        // hide the current, display the next word panel, enable the roll dice button
         for (int i = 0; i < words.Count; i++)
         {
             words[i].SetActive(i == index);
         }
 
-        
+        rollDiceButton.GetComponent<Button>().enabled = index <= words.Count;
+
     }
 
     /// <summary>
