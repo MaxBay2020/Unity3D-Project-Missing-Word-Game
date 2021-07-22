@@ -78,14 +78,14 @@ public class ClickEvents : MonoBehaviour
             // 1. switch sprite to muted image
             bgMusic.GetComponent<RawImage>().texture = soundMutedImage;
             // 2. turn off music
-            Camera.main.GetComponent<AudioListener>().enabled = false;
+            Camera.main.GetComponent<AudioSource>().mute = true;
         }
         else
         {
             // 1. switch sprite to unmuted image
             bgMusic.GetComponent<RawImage>().texture = soundUnmutedImage;
             // 2. turn on music
-            Camera.main.GetComponent<AudioListener>().enabled = true;
+            Camera.main.GetComponent<AudioSource>().mute = false;
         }
         hasMusic = !hasMusic;
     }

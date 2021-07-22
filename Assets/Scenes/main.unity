@@ -3223,32 +3223,32 @@ MonoBehaviour:
   wrongClip: {fileID: 8300000, guid: 1a9ff9f7873ef41aab785e1ab628d169, type: 3}
   congradsClip: {fileID: 8300000, guid: 8c387975571664f60a717f6d2628e4f2, type: 3}
   alphabetClips:
-  - {fileID: 8300000, guid: f38ef43d195d14ec4b7040f6828b0294, type: 3}
-  - {fileID: 8300000, guid: 706901b6732f1497793787872b70d048, type: 3}
-  - {fileID: 8300000, guid: 3e856733f48b243c0894d60e1642e6f8, type: 3}
-  - {fileID: 8300000, guid: 57c23f0a52efd4ab0a770896971298a3, type: 3}
-  - {fileID: 8300000, guid: 3ef3086e3bdd54b9e929c24c7896021b, type: 3}
-  - {fileID: 8300000, guid: bcf382e0e4c84421dbfee89701424580, type: 3}
-  - {fileID: 8300000, guid: f52fb155f5ce64043b402656ce92c6ee, type: 3}
-  - {fileID: 8300000, guid: e524e98069559428abc38ffa6069c2f6, type: 3}
-  - {fileID: 8300000, guid: 70f95be4576cc4cedb385eb23a9eb794, type: 3}
-  - {fileID: 8300000, guid: 46e199fd1799e4df09c7a52ed07ae7e7, type: 3}
-  - {fileID: 8300000, guid: 579745c3b04c24ba69eb7bd963310a82, type: 3}
-  - {fileID: 8300000, guid: afe83ec12e691476a9900ba651b99046, type: 3}
-  - {fileID: 8300000, guid: 5d0f2d81b796146b6b5b846e01f6dc2d, type: 3}
-  - {fileID: 8300000, guid: feedb8ef04444479982a1d9a6fe1e43d, type: 3}
-  - {fileID: 8300000, guid: 8f9956a972fbe42a5b75fd48b114d0de, type: 3}
-  - {fileID: 8300000, guid: 7bddd700bc05b415f934ed135cba75ef, type: 3}
-  - {fileID: 8300000, guid: 72489492efdfd41008fa81d9c105019d, type: 3}
-  - {fileID: 8300000, guid: 1e633a2c0b76948b3911dc80c20f64b9, type: 3}
-  - {fileID: 8300000, guid: 74f7d350ddfca4914a3d809595b8e719, type: 3}
-  - {fileID: 8300000, guid: 5e408fa7c459340bebc7b85e577a080a, type: 3}
-  - {fileID: 8300000, guid: 84cbd6e0bb7e9435598cce927179df31, type: 3}
-  - {fileID: 8300000, guid: 5ae1a5f18c9aa4cbfad8c1201f8f8e17, type: 3}
-  - {fileID: 8300000, guid: f72c91f47cc124159b2cee6c889c754f, type: 3}
-  - {fileID: 8300000, guid: 5fd2b9dcf36324501b91f8fb66a022f2, type: 3}
-  - {fileID: 8300000, guid: c6b1ab1579d424ca4813aed9950ecc35, type: 3}
-  - {fileID: 8300000, guid: 4c47f2711d3054807b2b9ca8202554e0, type: 3}
+  - {fileID: 8300000, guid: 06239c60955d84d928bcf2de79a13dfc, type: 3}
+  - {fileID: 8300000, guid: f31fd52f8d4c642668a910f2785120eb, type: 3}
+  - {fileID: 8300000, guid: e9fa3d4aa05c148d59c5e647ba3605e0, type: 3}
+  - {fileID: 8300000, guid: 4d938523e75b34d0db4aa919b683238e, type: 3}
+  - {fileID: 8300000, guid: f4d31b3c5eb4f44e2bf41b6f100c6faf, type: 3}
+  - {fileID: 8300000, guid: cc97e80adfc4842f5851c7a0756d56a7, type: 3}
+  - {fileID: 8300000, guid: b1fafce8d7b26418c92c59c405baa2b4, type: 3}
+  - {fileID: 8300000, guid: 1b8748f0d7e7b4b559b92157acf55e3d, type: 3}
+  - {fileID: 8300000, guid: 0f141a892a2a34166bfa16c5efca38ea, type: 3}
+  - {fileID: 8300000, guid: 2afcae73882404138864b177af3a2812, type: 3}
+  - {fileID: 8300000, guid: 3b6d08b3105384d35832d12b8cd190bf, type: 3}
+  - {fileID: 8300000, guid: 1428a679dbe634c9f8d82cf6d57b246c, type: 3}
+  - {fileID: 8300000, guid: afaaed3ad3cfd494aa6a96e5204b9af7, type: 3}
+  - {fileID: 8300000, guid: f5bac00d1ac6b474487260b2c5c53b52, type: 3}
+  - {fileID: 8300000, guid: 399fabd18d7084ee5ada03b98e6afec2, type: 3}
+  - {fileID: 8300000, guid: c1a819256cd0849b1be5a6dd2b3e6eba, type: 3}
+  - {fileID: 8300000, guid: 2938a8440a7d844f4bb1e1d50e6848d1, type: 3}
+  - {fileID: 8300000, guid: db771ffafc003471f8b7a2d4e589f4c5, type: 3}
+  - {fileID: 8300000, guid: 95645f5d9deda418cb8d182e147cd505, type: 3}
+  - {fileID: 8300000, guid: c168e50f7bc07486d9ec4e41f1e77bcb, type: 3}
+  - {fileID: 8300000, guid: b0fd38dd5a76b48b38abbe20fd680e07, type: 3}
+  - {fileID: 8300000, guid: 35347c78ce498484b842fa7af42f5644, type: 3}
+  - {fileID: 8300000, guid: a9e8e5aebdaa64b46b1f24d0788b1c31, type: 3}
+  - {fileID: 8300000, guid: 5b14171b1320d4028b63575304ab8da8, type: 3}
+  - {fileID: 8300000, guid: 3dae9e7d2c00141b586e1276ead11708, type: 3}
+  - {fileID: 8300000, guid: 64db81667ced44eed99f0ee6e1649e41, type: 3}
 --- !u!4 &949590591
 Transform:
   m_ObjectHideFlags: 0
@@ -3436,7 +3436,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 89e12be97171c4f349d0e766166fa712, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 1
