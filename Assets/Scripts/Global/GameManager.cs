@@ -184,6 +184,6 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public void RestartButtonClick()
     {
-        SceneManager.LoadScene(1);  
+        SceneManager.LoadScene(0);  
     }
 }
