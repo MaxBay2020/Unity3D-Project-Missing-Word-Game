@@ -58,6 +58,7 @@ public class ClickEvents : MonoBehaviour
     {
         tutorialPanels[index].SetActive(false);
         bgGrey.SetActive(false);
+        index = 0;
     }
 
     /// <summary>
