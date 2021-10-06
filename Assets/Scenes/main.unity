@@ -3220,8 +3220,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clickClip: {fileID: 8300000, guid: 7a24786780d614f9f9d86b526d057ade, type: 3}
   correctClip: {fileID: 8300000, guid: b8963503e81744313909054f1f6c350f, type: 3}
-  wrongClip: {fileID: 8300000, guid: 132f82580b52c4fada7596b7339d7b28, type: 3}
-  congradsClip: {fileID: 8300000, guid: 8c387975571664f60a717f6d2628e4f2, type: 3}
+  wrongClip: {fileID: 8300000, guid: 2be1ae6a52daa4417a300980e8ec72d2, type: 3}
+  congradsClip: {fileID: 8300000, guid: fbe551986c77c4eecb9c570e69095511, type: 3}
   alphabetClips:
   - {fileID: 8300000, guid: 06239c60955d84d928bcf2de79a13dfc, type: 3}
   - {fileID: 8300000, guid: f31fd52f8d4c642668a910f2785120eb, type: 3}
