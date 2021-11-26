@@ -66,8 +66,43 @@ public class GameManager : MonoBehaviour
     /// <returns></returns>
     IEnumerator AlphabetClipPlay(string wordsFilled)
     {
-        char[] alphabets = wordsFilled.ToCharArray();
-        foreach (char alphabet in alphabets)
+        string[] allCompounds={"ch", "ng", "nk","qu","sh","th"};
+
+        string[] alphabetsArray = wordsFilled.Split(',');
+
+        List<string> alphabetsList=new List<string>();
+        for (int i = 0; i < wordsFilled.Length; i++)
+        {
+            alphabetsList.Add(wordsFilled.Substring(i,1));
+        }
+
+        foreach (string eachCompound in allCompounds)
+        {
+            if(wordsFilled.Contains(eachCompound)){
+                alphabetsList.Clear();
+                int indexOfEachCompound=wordsFilled.IndexOf(eachCompound);
+                string newString=wordsFilled.Replace(eachCompound,"");
+                // List<string> withoutCompoundList=new List<string>();
+                for (int i = 0; i < newString.Length; i++)
+                {
+                    alphabetsList.Add(newString.Substring(i,1));
+                }
+
+                // insert compound at specified position
+                alphabetsList.Insert(indexOfEachCompound, eachCompound);
+
+                break;
+            }
+        }
+
+        foreach (string eachLetter in alphabetsList)
+        {
+            print(eachLetter);
+        }
+
+
+        // play letter sound audio
+        foreach (string alphabet in alphabetsList)
         {
             foreach (AudioClip alphabetClip in SoundManager._instance.alphabetClips)
             {
